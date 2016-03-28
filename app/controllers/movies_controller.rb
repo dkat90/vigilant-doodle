@@ -9,6 +9,7 @@ class MoviesController < ApplicationController
   def create
   end
 
+
   def show
   end
 
@@ -19,8 +20,9 @@ class MoviesController < ApplicationController
   end
 
   private
-    def movie_params
-      params.require(:movie).permit(:title, :summary, :youtube_embeded_id, :thumbnail)
-    end
+
+  def movie_params
+    params.require(:movie).permit(:title, :summary, :youtube_embeded_id, :thumbnail)
+  end
 
 end
